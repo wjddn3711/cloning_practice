@@ -1,8 +1,8 @@
 .screen-header {
   margin-top: 40px;
   margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: var(--horizontal-space);
+  margin-right: var(--horizontal-space);
   /* padding: 10px; */
   display: flex;
   justify-content: space-between;
