@@ -15,5 +15,12 @@
 }
 
 .screen-header__icons span {
+  display: inline-block;
+  position: relative;
   margin-left: 15px;
+}
+
+.screen-header__cog__notification {
+  left: 35px;
+  bottom: 14px;
 }

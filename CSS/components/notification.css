@@ -1,0 +1,8 @@
+.notification {
+  background-color: tomato;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  display: block;
+  position: absolute;
+}
