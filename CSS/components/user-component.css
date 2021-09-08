@@ -58,3 +58,23 @@
   font-size: 12px;
   margin-bottom: 8px;
 }
+
+.user-component__column:last-child i {
+  color: black;
+}
+
+.user-component__subtitle {
+  display: flex;
+}
+
+.user-component__subtitle div {
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: tomato;
+  width: 8px;
+  height: 8px;
+  border: 1px solid tomato;
+  border-radius: 50%;
+}

@@ -1,6 +1,8 @@
 @import "reset.css";
 @import "variables.css";
 /* components */
+@import "components/alt-screen-header.css";
+@import "components/icon-row.css";
 @import "components/notification.css";
 @import "components/badge.css";
 @import "components/status-bar.css";
@@ -8,6 +10,7 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 /* screens */
+@import "screens/more.css";
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
