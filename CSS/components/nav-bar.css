@@ -25,6 +25,7 @@
 }
 
 .nav__ellipsis__notification {
+  position: absolute;
   /* right: 20px; */
   left: 32px;
   bottom: 25px;

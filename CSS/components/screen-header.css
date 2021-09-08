@@ -15,12 +15,18 @@
 }
 
 .screen-header__icons span {
-  display: inline-block;
-  position: relative;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* position: relative; */
   margin-left: 15px;
 }
 
+.screen-header__cog {
+  position: relative;
+}
+
 .screen-header__cog__notification {
-  left: 35px;
-  bottom: 14px;
+  position: absolute;
+  left: 4px;
+  bottom: 18px;
 }
