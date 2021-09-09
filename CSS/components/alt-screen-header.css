@@ -1,5 +1,6 @@
 .alt-header {
-  width=100%;
+  /* position: fixed;
+  width: 80%; */
   margin-top: 40px;
   margin-bottom: 10px;
   margin-left: var(--horizontal-space);
@@ -23,12 +24,13 @@
 } */
 
 .alt-header__column {
-  width:33%;
+  width: 33%;
 }
 
 .alt-header__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
+  text-align: center;
 }
 
 .alt-header__column:last-child {

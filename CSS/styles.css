@@ -10,6 +10,7 @@
 @import "components/screen-header.css";
 @import "components/user-component.css";
 /* screens */
+@import "screens/chatting.css";
 @import "screens/settings.css";
 @import "screens/more.css";
 @import "screens/login.css";

@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings - KoKoaClone</title>
 </head>
-<body>
-    <div class="status-bar">
+<body id="chatting-screen">
+    <div class="status-bar chats">
         <div class="status-bar__column">
             <span>No Service</span>
             <i class="fas fa-wifi"></i>
@@ -26,12 +26,12 @@
         </div>
     </div>
     
-    <header class="alt-header">
+    <header class="alt-header chats">
         <div class="alt-header__column">
-            <i class="fas fa-angle-left fa-2x"></i>
+            <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>    
         </div>
         <div class="alt-header__column">
-            <h1 class="alt-header__title">딩위</h1>
+            <h1 class="alt-header__title">KoKoaTalk</h1>
         </div>
 
         <div class="alt-header__column">
@@ -40,32 +40,31 @@
         </div>
     </header>
 
-    <main class="main-screen">
-        
-
+    <main class="main-screen main-chat">
+        <div class="chatting-time">
+            <div class="chatting-time__box">
+                <span>Tuesday, June 30, 2020</span>
+            </div>
+        </div>
+        <div class="message-row">
+            <img src="http://image.kmib.co.kr/online_image/2020/0101/611414110014085644_1.jpg" class="user-component__avatar user-component__avatar--sm">
+            <div class="message-row__content">
+                <span class="message-row__author">KoKoaTalk</span>
+                <div class="message-row__info">
+                    <span class="message-row__bubble">Hi !</span>
+                    <span class="message-row__time">21:27</span>
+                </div>  
+            </div>
+        </div>
+        <div class="message-row__reply">
+            <span class="message-row__reply-time">21:29</span>
+            <span class="message-row__reply-info">Hello KoKoa World !</span>
+        </div>
     </main>
+    </div>
+    
 
-
-    <nav class="nav">
-        <ul class="nav__list">
-            <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
-                    <i class="far fa-user fa-2x"></i>
-                </a></li>
-            <li class="nav__btn">
-                <a class="nav__link" href="chats.html">      
-                    <span class="nav__notification badge">1</span>
-                    <i class="far fa-comment fa-2x"></i>
-                </a>
-            </li>
-            <li class="nav__btn">
-                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
-            <li class="nav__btn">
-                <a class="nav__link" href="more.html">
-                    <span class="nav__ellipsis__notification notification"></span>
-                    <i class="fas fa-ellipsis-h fa-2x"></i></a></li>
-        </ul>
-    </nav>
+    
     
 
 
