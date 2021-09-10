@@ -25,8 +25,36 @@
   position: relative;
 }
 
+/* disapears cog's dot icon */
+/* @keyframes disapearDot {
+  from {
+    opacity: initial;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.screen-header__cog__notification:hover {
+  animation: disapearDot 0.2s linear forwards;
+} */
+
 .screen-header__cog__notification {
   position: absolute;
   left: 4px;
   bottom: 18px;
+}
+
+/* rotates cog icon */
+@keyframes cogRotation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: cogRotation 2s linear infinite;
 }

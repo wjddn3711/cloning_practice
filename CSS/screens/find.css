@@ -110,8 +110,26 @@
 .open-post:first-child {
   padding-bottom: 10px;
 }
-
+@keyframes heartBeat {
+  0% {
+    color:white;
+    transform: none;
+  }
+  50% {
+    color:tomato;
+    transform: scale(3);
+  }
+  100% {
+    color:white:
+  }
+}
 .open-post:last-child {
   border-top: var(--main-border);
   padding-top: 10px;
 }
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
+

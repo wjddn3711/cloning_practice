@@ -1,6 +1,7 @@
 @import "reset.css";
 @import "variables.css";
 /* components */
+@import "components/no-mobile.css";
 @import "components/alt-screen-header.css";
 @import "components/icon-row.css";
 @import "components/notification.css";

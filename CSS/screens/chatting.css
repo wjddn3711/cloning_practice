@@ -1,6 +1,6 @@
 #chatting-screen {
   background-color: #abc1d1;
-  height: 1000vh;
+  height: 500vh;
 }
 
 #chatting-screen .alt-header {
@@ -12,13 +12,22 @@
   box-sizing: border-box;
 }
 
-/* .main-chat {
-  margin-top: 150px;
-} */
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .chatting-time {
   display: flex;
   justify-content: center;
   margin-bottom: 17px;
+  animation: fadeIn 0.8s linear;
 }
 
 .chatting-time__box {
@@ -51,6 +60,22 @@
   margin-bottom: 10px;
 }
 
+@keyframes imgBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.message-row img:hover {
+  will-change: transform;
+  animation: imgBeat 2s linear infinite;
+}
+
 .message-row img {
   margin-right: 10px;
 }
@@ -63,12 +88,26 @@
   font-weight: 600;
 }
 
+@keyframes bubblePop {
+  0% {
+    opacity: 0;
+    /* transform: translateY(-20px); */
+  }
+  50% {
+    /* transform: translateY(-10px); */
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .message-row__bubble {
   background-color: white;
   padding: 11px;
   border-radius: 14px;
   border-top-left-radius: 0px;
   font-size: 16px;
+  animation: bubblePop 2s ease-in-out;
 }
 
 .message-row__time {
@@ -94,6 +133,7 @@
 }
 
 .message-row__reply-info {
+  animation: bubblePop 2s ease-in-out;
   background-color: var(--yellow);
   padding: 11px;
   border-radius: 14px;
@@ -137,6 +177,7 @@
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* .form_column:last-child:not(input) {
@@ -168,4 +209,27 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+.keyboard:focus-within .form_column:first-child,
+.keyboard:focus-within .fa-smile,
+.keyboard:focus-within button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.keyboard:focus-within .form_column:first-child,
+.keyboard:focus-within .fa-smile,
+.keyboard:focus-within button {
+  width: 0%;
+  opacity: 0;
+}
+
+.keyboard:focus-within input {
+  width: 98vw;
+  transform: translateX(-10%);
+  transform: translateY(-80px);
+}
+
+.keyboard:focus-within {
+  transform: translateY(80px);
 }
