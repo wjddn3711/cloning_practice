@@ -1,0 +1,135 @@
+.recommended-friends {
+  margin: 20px 0px;
+  padding: 20px 0px;
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+}
+
+.recommended-friends__title {
+  font-size: 14px;
+  color: var(--grey);
+}
+
+.recommended-friends span {
+  display: block;
+  margin: 100px 0px;
+  text-align: center;
+  color: var(--grey);
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--grey);
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.open-chat__header h4 {
+  font-weight: 600;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.open-post__hashtags-upper {
+  text-transform: uppercase;
+}
+
+.open-post__hashtags {
+  color: var(--grey);
+  font-size: 14px;
+}
+
+.open-post__members {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: var(--grey);
+  margin-top: 7px;
+}
+
+.open-post__members img {
+  width: 14px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.open-post__members .divider {
+  width: 1px;
+  height: 15px;
+  background-color: var(--grey);
+  margin: 0px 5px;
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+  font-weight: 600;
+}
+
+.open-post__photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+.open-post__photo {
+  position: relative;
+}
+
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5px;
+  bottom: 10px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+.open-posts {
+  display: flex;
+  flex-direction: column;
+  margin: 12px 0px;
+}
+.open-post:first-child {
+  padding-bottom: 10px;
+}
+@keyframes heartBeat {
+  0% {
+    color:white;
+    transform: none;
+  }
+  50% {
+    color:tomato;
+    transform: scale(3);
+  }
+  100% {
+    color:white:
+  }
+}
+.open-post:last-child {
+  border-top: var(--main-border);
+  padding-top: 10px;
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
+
